@@ -1,0 +1,21 @@
+{% extends 'shop/base.html' %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+  <h1>Contact Us</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+
+    <label>WhatsApp Number:</label><br>
+    <input type="text" name="whatsapp" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Reason for Contact:</label><br>
+    <textarea name="reason" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}

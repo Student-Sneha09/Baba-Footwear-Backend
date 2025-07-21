@@ -1,87 +1,48 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Baba Footwear</title>
-  <link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
-</head>
-<body>
-  <header>
-    <!-- Navbar Start -->
-    <nav class="navbar">
-      <div class="logo">Baba Footwear 👟</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-        <div class="theme-toggle">
-          <button id="theme-toggle">🌙 Toggle Theme</button>
-        </div>
-        <input type="text" id="search-input" placeholder="Search Products">
-        <button id="search-btn">Search</button>
-      </ul>
-    </nav>
-    <!-- Navbar End -->
-  </header>
+{% extends 'shop/base.html' %}
+{% block title %}Home - Baba Footwear{% endblock %}
+{% block content %}
 
-  <h2>Men's Collection</h2>
-  <div id="men" class="product-container">
+<h2>Men's Collection</h2>
+<div class="product-container">
   {% for product in products %}
-  {% if product.category == "men" %}
-    <div class="product-card">
-      <img src="{{ product.image.url }}" alt="{{ product.name }}">
-      <h3 class="product-title">{{ product.name }}</h3>
-      <p>Size: {{ product.size }}</p>
-      <p>₹{{ product.price }}</p>
-    </div>
-  {% endif %}
-{% endfor %}
+    {% if product.category == "men" %}
+      <div class="product-card">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h3 class="product-title">{{ product.name }}</h3>
+        <p>Size: {{ product.size }}</p>
+        <p>₹{{ product.price }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <h2>Women's Collection</h2>
-<div id="women" class="product-container">
-{% for product in products %}
-  {% if product.category == "women" %}
-    <div class="product-card">
-      <img src="{{ product.image.url }}" alt="{{ product.name }}">
-      <h3 class="product-title">{{ product.name }}</h3>
-      <p>Size: {{ product.size }}</p>
-      <p>₹{{ product.price }}</p>
-    </div>
-  {% endif %}
-{% endfor %}
+<div class="product-container">
+  {% for product in products %}
+    {% if product.category == "women" %}
+      <div class="product-card">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h3 class="product-title">{{ product.name }}</h3>
+        <p>Size: {{ product.size }}</p>
+        <p>₹{{ product.price }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <h2>Kid's Collection</h2>
-<div id="kid" class="product-container">
-{% for product in products %}
-  {% if product.category == "kid" %}
-    <div class="product-card">
-      <img src="{{ product.image.url }}" alt="{{ product.name }}">
-      <h3 class="product-title">{{ product.name }}</h3>
-      <p>Size: {{ product.size }}</p>
-      <p>₹{{ product.price }}</p>
-    </div>
-  {% endif %}
-{% endfor %}
+<div class="product-container">
+  {% for product in products %}
+    {% if product.category == "kid" %}
+      <div class="product-card">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <h3 class="product-title">{{ product.name }}</h3>
+        <p>Size: {{ product.size }}</p>
+        <p>₹{{ product.price }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
-<footer>
-    <div class="footer-container">
-      <div class="about-footer">
-        <h3>About Us</h3>
-        <p>Baba Footwear is your one-stop shop for stylish, comfortable, and affordable footwear for all ages. From trendy sneakers to kids’ sandals — we deliver trust and quality.</p>
-      </div>
-      <div class="contact-footer">
-        <h3>Contact</h3>
-        <p>📍 Gursahaiganj(Kannauj), UP</p>
-        <p>📞 9628XXXXXX</p>
-        <p>✉️ babafootwear@email.com</p>
-      </div>
-    </div>
-  </footer>
+{% endblock %}
 
-  <script src="{% static 'shop/js/script.js' %}"></script>
-</body>
-</html>
