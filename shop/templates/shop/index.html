@@ -3,7 +3,7 @@
 {% block content %}
 
 <h2>Men's Collection</h2>
-<div class="product-container">
+<div id="men" class="product-container">
   {% for product in products %}
     {% if product.category == "men" %}
       <div class="product-card">
@@ -17,7 +17,7 @@
 </div>
 
 <h2>Women's Collection</h2>
-<div class="product-container">
+<div id ="women" class="product-container">
   {% for product in products %}
     {% if product.category == "women" %}
       <div class="product-card">
@@ -31,7 +31,7 @@
 </div>
 
 <h2>Kid's Collection</h2>
-<div class="product-container">
+<div id="kid" class="product-container">
   {% for product in products %}
     {% if product.category == "kid" %}
       <div class="product-card">
