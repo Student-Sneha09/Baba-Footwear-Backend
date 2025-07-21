@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-m*733wu%_xwk8p0jj60m-=^6+qzzgzw!fj+37ymo5s)9$1_2tt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['baba-footwear-backend.onrender.com']
 
 
 # Application definition
