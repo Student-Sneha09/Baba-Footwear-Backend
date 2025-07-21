@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Django database
+db.sqlite3
+
+# Media (user uploaded files)
+media/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.DS_Store
+
+# Django collectstatic folder (if used)
+staticfiles/
+
+# Secret keys or env files
+*.env
