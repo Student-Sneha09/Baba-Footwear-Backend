@@ -210,8 +210,14 @@ footer p,pre {
 
 /* Footer and Nav */
 .dark-theme nav,.dark-theme footer {
-  background-color: #1f1f1f;
+  background-color: #000000;
   color: white;
+}
+
+footer.darkmode a,
+footer.darkmode p,
+footer.darkmode h3{
+  color : #ffffff
 }
 
 .theme-toggle{

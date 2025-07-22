@@ -1,26 +1,30 @@
-// Theme Toggle
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle?.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-  });
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
 
-  // Search Functionality
-  // Search Filter
-document.addEventListener("DOMContentLoaded", function () {
-  const searchBtn = document.getElementById("search-btn");
-  const searchInput = document.getElementById("search-input");
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
 
-  searchBtn.addEventListener("click", function () {
-    const searchTerm = searchInput.value.toLowerCase();
-    const products = document.querySelectorAll(".product-card");
+  // Also toggle class on footer (add if not present)
+  const footer = document.querySelector('footer');
+  if (footer) {
+    footer.classList.toggle('dark-mode');
+  }
 
-    products.forEach((product) => {
-      const title = product.querySelector(".product-title").textContent.toLowerCase();
-      if (title.includes(searchTerm)) {
-        product.style.display = "block";
-      } else {
-        product.style.display = "none";
-      }
-    });
-  });
+  // Optional: Store user preference in localStorage
+  const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', mode);
 });
+
+// Load saved theme on reload
+window.addEventListener('DOMContentLoaded', () => {
+  const savedMode = localStorage.getItem('theme');
+  if (savedMode === 'dark') {
+    body.classList.add('dark-mode');
+
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.classList.add('dark-mode');
+    }
+  }
+});
+
