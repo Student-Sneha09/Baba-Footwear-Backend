@@ -189,7 +189,7 @@ footer h3 {
   color: #ffcc00;
 }
 
-footer p {
+footer p,pre {
   margin: 5px 0;
   line-height: 1.6;
 }
