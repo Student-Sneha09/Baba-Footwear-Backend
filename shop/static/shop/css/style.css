@@ -1,15 +1,9 @@
-html,body {
-  height: 100%;
+body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-body > footer{
-  margin-top: auto;
 }
 
 header {
@@ -85,15 +79,15 @@ h2 {
 }
 
 #women {
-  background-color: #638f91;
+  background-color: #fceeee;
 }
 
 #men {
-  background-color: #878d69;
+  background-color: #eef7ff;
 }
 
 #kid {
-  background-color: #8c708a;
+  background-color: #fffbe6;
 }
 
 /* ===== Navbar Styling ===== */
@@ -138,35 +132,12 @@ h2 {
   color: #ffcc00;
 }
 
-#search-input {
-  height: 23px;
-  padding: 4px 8px;
-  font-size: 14px;
-  margin-left: 10px;
-}
-
-#search-btn,
-#theme-toggle {
-  height: 28px;
-  padding: 5px 10px;
-  font-size: 14px;
-  margin-left: 5px;
-  border: none;
-  background-color: #b4b91e;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 footer {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   margin-top: 40px;
   font-size: 14px;
-  text-align: center;
-  height: 100px;
-  flex-shrink: 0;
 }
 
 .footer-container {
@@ -206,7 +177,7 @@ footer p {
 
 /* Footer and Nav */
 .dark-theme nav,.dark-theme footer {
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: white;
 }
 
