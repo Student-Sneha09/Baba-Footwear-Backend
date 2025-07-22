@@ -24,6 +24,8 @@
   </nav>
   
   <!-- Flash messages -->
+
+  <main>
   {% if messages %}
     {% for message in messages %}
       <div class="alert">{{ message }}</div>
@@ -31,7 +33,7 @@
   {% endif %}
   
   {% block content %}{% endblock %}
-
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -40,9 +42,8 @@
         <h3>Thankyou for Visiting!</h3>
         <h3>About Us</h3>
         <p>Baba Footwear offers stylish, affordable shoes for everyone.</p>
-        <pre>Location  - Near RamMandir, Gursahaiganj(Kannauj) , 
-                 Uttar Pradesh
-              email - babafootwear8299@gmail.com</pre>
+        <p>📍 Near Ram Mandir, Gursahaiganj (Kannauj), Uttar Pradesh</p>
+        <p>✉️ babafootwear8299@gmail.com</p>
       </div>
     </div>
   </footer>
