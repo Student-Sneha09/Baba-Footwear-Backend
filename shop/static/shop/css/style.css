@@ -12,10 +12,6 @@ body > footer{
   margin-top: auto;
 }
 
-main{
-  flex: 1;
-}
-
 header {
   background-color: #343a40;
   color: white;
@@ -193,7 +189,7 @@ footer h3 {
   color: #ffcc00;
 }
 
-footer p,pre {
+footer p {
   margin: 5px 0;
   line-height: 1.6;
 }
@@ -212,12 +208,6 @@ footer p,pre {
 .dark-theme nav,.dark-theme footer {
   background-color: #000000;
   color: white;
-}
-
-footer.darkmode a,
-footer.darkmode p,
-footer.darkmode h3{
-  color : #ffffff
 }
 
 .theme-toggle{
