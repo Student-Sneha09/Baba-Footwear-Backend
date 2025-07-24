@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -14,7 +15,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=7, decimal_places=2)
     size = models.CharField(max_length=20, blank=True, null=True)  # 👈 NEW FIELD
     category = models.CharField(max_length=10,choices=CATEGORY_CHOICES,default='men') # CREATES DROPDOWN
-    image = models.ImageField(upload_to='products/')
+    #image = models.ImageField(upload_to='products/')
+    image = CloudinaryField('image')
     description = models.TextField(blank=True)
 
 
