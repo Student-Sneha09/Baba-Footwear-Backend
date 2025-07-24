@@ -205,6 +205,11 @@ body.dark-theme h3 {
   color: white;
 }
 
+body.dark-theme #kid .product-card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
