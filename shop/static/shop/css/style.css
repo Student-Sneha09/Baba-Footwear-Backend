@@ -194,9 +194,9 @@ body.dark-theme .product-card {
   border: 1px solid #444;
 }
 
-body.dark-theme #kid .product-card {
-  background-color: #1e1e1e !important;
-  color: white !important;
+body.dark-theme .product-title,
+body.dark-theme .product-card p {
+  color: white;
 }
 
 /* Headings */
