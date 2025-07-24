@@ -207,8 +207,15 @@ body.dark-theme h3 {
   color: white;
 }
 
-.dark-theme .products-container{
+/* Dark theme background for all product containers */
+.dark-theme .product-container {
   background-color: #1e1e1e;
+}
+
+/* Optional: change text color in dark theme */
+.dark-theme .product-container .product-title,
+.dark-theme .product-container p {
+  color:#fff;
 }
 
 body.dark-theme #kid .product-card {
