@@ -223,6 +223,20 @@ body.dark-theme #kid .product-card {
   color: white !important;
 }
 
+.dark-theme .product-card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.dark-theme .product-card img {
+  border: 1px solid #333;
+}
+
+.dark-theme h2 {
+  color: #f5f5f5;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
