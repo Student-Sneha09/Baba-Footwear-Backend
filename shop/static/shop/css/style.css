@@ -173,37 +173,32 @@ footer p {
   margin: 5px 0;
   line-height: 1.6;
 }
-
-/* DARK MODE THEME */
-.dark-theme {
+/* Dark Theme base */
+body.dark-theme {
   background-color: #121212;
   color: #ffffff;
 }
 
-.dark-theme .product-card {
-  background-color: #2a2a2a;
-  color: #eee;
-}
-
-/* Footer and Nav */
-.dark-theme nav,.dark-theme footer {
-  background-color: #1f1f1f;
+/* Navbar and footer in dark theme */
+body.dark-theme .navbar,
+body.dark-theme footer,
+body.dark-theme .footer-container {
+  background-color: #1e1e1e;
   color: white;
 }
 
-.theme-toggle{
-  margin-left: 10px;
+/* Product card dark styles */
+body.dark-theme .product-card {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
 }
 
-#theme-toggle {
-  padding: 6px 12px;
-  border: none;
-  background-color: #6c9d2d;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
+/* Headings */
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: white;
 }
-
 
 
 /* 📱 Mobile Responsive Styling */

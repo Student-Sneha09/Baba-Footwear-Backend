@@ -1,11 +1,8 @@
 const themeToggle = document.getElementById("theme-toggle");
+
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
-
-  const productCards = document.querySelectorAll(".product-card");
-  productCards.forEach(card => card.classList.toggle("dark-theme"));
 });
-
   // Search Functionality
   // Search Filter
 document.addEventListener("DOMContentLoaded", function () {
