@@ -2,7 +2,7 @@
 {% block title %}Home - Baba Footwear{% endblock %}
 {% block content %}
 
-<h2>Men's Collection</h2>
+<h2 class="section-heading">Men's Collection</h2>
 <div id="men" class="product-container">
   {% for product in products %}
     {% if product.category == "men" %}
@@ -16,7 +16,7 @@
   {% endfor %}
 </div>
 
-<h2>Women's Collection</h2>
+<h2 class="section-heading">Women's Collection</h2>
 <div id ="women" class="product-container">
   {% for product in products %}
     {% if product.category == "women" %}
