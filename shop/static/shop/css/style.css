@@ -207,34 +207,13 @@ body.dark-theme h3 {
   color: white;
 }
 
-/* Dark theme background for all product containers */
-.dark-theme .product-container {
+.dark-theme .products-container{
   background-color: #1e1e1e;
-}
-
-/* Optional: change text color in dark theme */
-.dark-theme .product-container .product-title,
-.dark-theme .product-container p {
-  color:#fff;
 }
 
 body.dark-theme #kid .product-card {
   background-color: #1e1e1e !important;
   color: white !important;
-}
-
-.dark-theme .product-card {
-  background-color: #1e1e1e;
-  color: #fff;
-  border: 1px solid #444;
-}
-
-.dark-theme .product-card img {
-  border: 1px solid #333;
-}
-
-.dark-theme h2 {
-  color: #f5f5f5;
 }
 
 
