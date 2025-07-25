@@ -202,23 +202,18 @@ body.dark-theme .product-card p {
 }
 
 /* Headings */
-body.dark-theme h2,
 body.dark-theme h3 {
+  color: white;
+}
+
+body.dark-theme h2{
+  background-color: #121212;
   color: white;
 }
 
 body.dark-theme #kid .product-card {
   background-color: #1e1e1e !important;
   color: white !important;
-}
-
-body.dark-theme #kid {
-  background-color: #1e1e1e !important;
-}
-
-/* Fix for Kid's Section Dark Theme */
-body.dark-theme #kid {
-  background-color: #121212 !important;
 }
 
 
