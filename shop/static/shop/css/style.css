@@ -221,6 +221,11 @@ body.dark-theme #kid .product-card {
   color: white !important;
 }
 
+body.dark-theme .section-heading{
+  background-color: #121212;
+  color: white;
+}
+
 
 
 /* 📱 Mobile Responsive Styling */
