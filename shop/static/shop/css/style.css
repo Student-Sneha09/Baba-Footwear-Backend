@@ -175,13 +175,13 @@ footer p {
   margin: 5px 0;
   line-height: 1.6;
 }
-/* Dark Theme base */
+/* 🌙 Dark Theme Base */
 body.dark-theme {
   background-color: #121212;
   color: #ffffff;
 }
 
-/* Navbar and footer in dark theme */
+/* Navbar and footer */
 body.dark-theme .navbar,
 body.dark-theme footer,
 body.dark-theme .footer-container {
@@ -189,7 +189,21 @@ body.dark-theme .footer-container {
   color: white;
 }
 
-/* Product card dark styles */
+/* Headings */
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: white;
+  background-color: #121212;
+}
+
+/* Product containers */
+body.dark-theme #men,
+body.dark-theme #women,
+body.dark-theme #kid {
+  background-color: #121212 !important;
+}
+
+/* Product cards */
 body.dark-theme .product-card {
   background-color: #1e1e1e;
   color: white;
@@ -201,34 +215,10 @@ body.dark-theme .product-card p {
   color: white;
 }
 
-/* Headings */
-body.dark-theme h3 {
-  color: white;
-}
-
-/* Fix: Keep Kid section yellow but black background behind in dark mode */
-body.dark-theme #kid {
-  background-color: #fffbe6 !important;
-  position: relative;
-  z-index: 1;
-}
-
-/* Add black overlay behind #kid section */
-body.dark-theme #kid::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #121212;
-  z-index: -1;
-}
-
-/* Fix heading background above kid section */
-body.dark-theme h2 {
-  background-color: transparent;
-  color: white;
+/* Special fix: Keep kid cards yellow (optional) */
+body.dark-theme #kid .product-card {
+  background-color: #1e1e1e !important;
+  color: white !important;
 }
 
 
