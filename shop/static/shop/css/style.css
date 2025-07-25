@@ -216,6 +216,23 @@ body.dark-theme #kid .product-card {
   color: white !important;
 }
 
+body.dark-theme #kid {
+  background-color: #fffbe6 !important; /* keep yellow */
+  position: relative;
+  z-index: 1;
+}
+
+body.dark-theme #kid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #121212;  /* black background */
+  z-index: -1;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
