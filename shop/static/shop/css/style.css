@@ -206,22 +206,14 @@ body.dark-theme h3 {
   color: white;
 }
 
-body.dark-theme h2{
-  background-color: #121212;
-  color: white;
-}
-
-body.dark-theme #kid .product-card {
-  background-color: #1e1e1e !important;
-  color: white !important;
-}
-
+/* Fix: Keep Kid section yellow but black background behind in dark mode */
 body.dark-theme #kid {
-  background-color: #fffbe6 !important; /* keep yellow */
+  background-color: #fffbe6 !important;
   position: relative;
   z-index: 1;
 }
 
+/* Add black overlay behind #kid section */
 body.dark-theme #kid::before {
   content: "";
   position: absolute;
@@ -229,9 +221,16 @@ body.dark-theme #kid::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #121212;  /* black background */
+  background-color: #121212;
   z-index: -1;
 }
+
+/* Fix heading background above kid section */
+body.dark-theme h2 {
+  background-color: transparent;
+  color: white;
+}
+
 
 
 /* 📱 Mobile Responsive Styling */
