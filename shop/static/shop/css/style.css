@@ -251,6 +251,10 @@ body.dark-theme .product-title {
   color: white !important;
 }
 
+*{
+  outline: 2px solid red;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
