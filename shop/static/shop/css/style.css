@@ -211,6 +211,46 @@ body.dark-theme .product-title {
   color: white !important;
 }
 
+/* 🌙 Dark Theme: Fix ALL unwanted white gaps and backgrounds */
+body.dark-theme {
+  background-color: #121212 !important;
+  color: white;
+}
+
+/* Override ALL section container backgrounds */
+body.dark-theme .product-container,
+body.dark-theme #men,
+body.dark-theme #women,
+body.dark-theme #kid,
+body.dark-theme section,
+body.dark-theme div,
+body.dark-theme main,
+body.dark-theme .main-content,
+body.dark-theme .content {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+/* Ensure headings are dark */
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme .section-heading {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+/* Product cards */
+body.dark-theme .product-card {
+  background-color: #1e1e1e !important;
+  border: 1px solid #444;
+  color: white;
+}
+
+body.dark-theme .product-card p,
+body.dark-theme .product-title {
+  color: white !important;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
