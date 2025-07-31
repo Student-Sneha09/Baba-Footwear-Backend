@@ -216,6 +216,15 @@ body.dark-theme .product-card p {
   color: white;
 }
 
+/* 🔧 Fix white background stripes in dark mode */
+body.dark-theme #kid,
+body.dark-theme #kid .product-container,
+body.dark-theme #kid ~ footer,
+body.dark-theme .section-heading,
+body.dark-theme {
+  background-color: #121212 !important;
+}
+
 
 /* 📱 Mobile Responsive Styling */
   /* ✅ Mobile screen adjustments */
