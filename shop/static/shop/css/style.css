@@ -211,44 +211,51 @@ body.dark-theme .product-title {
   color: white !important;
 }
 
-/* 🌙 Dark Theme: Fix ALL unwanted white gaps and backgrounds */
-body.dark-theme {
+/* 🌙 DARK THEME FULL FIX */
+body.dark-theme,
+body.dark-theme html {
   background-color: #121212 !important;
-  color: white;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Override ALL section container backgrounds */
+/* Target all collection wrappers */
 body.dark-theme .product-container,
 body.dark-theme #men,
 body.dark-theme #women,
-body.dark-theme #kid,
-body.dark-theme section,
-body.dark-theme div,
-body.dark-theme main,
-body.dark-theme .main-content,
-body.dark-theme .content {
+body.dark-theme #kid {
   background-color: #121212 !important;
-  color: white !important;
 }
 
-/* Ensure headings are dark */
+/* Headings */
 body.dark-theme h2,
 body.dark-theme h3,
 body.dark-theme .section-heading {
   background-color: #121212 !important;
   color: white !important;
+  margin: 0 auto 20px;
+  padding: 10px 0;
 }
 
-/* Product cards */
+/* Product Cards */
 body.dark-theme .product-card {
   background-color: #1e1e1e !important;
+  color: white !important;
   border: 1px solid #444;
-  color: white;
 }
 
-body.dark-theme .product-card p,
-body.dark-theme .product-title {
+body.dark-theme .product-title,
+body.dark-theme .product-card p {
   color: white !important;
+}
+
+/* Eliminate white gaps globally */
+body.dark-theme * {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
